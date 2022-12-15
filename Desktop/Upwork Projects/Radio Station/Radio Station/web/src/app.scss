@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary-color: #ff0014;
+$primary-color-dark: #c3000f;
+$secondary-color: #00CA93;
+$secondary-color-dark:#008863;
+a{
+	color: inherit;
+}
+.btn-local {
+	color: black;
+	font-size: 1.2em;
+	border-radius: 6px;
+	border: 2px solid $primary-color-dark;
+	background-color: $primary-color;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: 0.4em 1.5em;
+}
+.btn-small-local {
+	color: white;
+	font-size: 1.2em;
+	border-radius: 6px;
+	border: 2px solid $secondary-color-dark;
+	background-color: $secondary-color;
+	font-weight: 600;
+	letter-spacing: 2px;
+
+}
+
+.stationsGrid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.stationBlock {
+	padding: 2rem 1rem;
+	width: 30%;
+}
+
+.stationBlock .image {
+	min-height: 10rem;
+}
+
+.title {
+	font-size: 2.3em;
+	font-weight: bold;
+}
+.subtitle{
+	font-size: 2.2em;
+	font-weight: 600;
+}
+.micro-title{
+	font-size: 1.6em;
+	font-weight: 600;
+
+}
+.sidePanel{
+	height: 100%;
+	width:25vw !important;
+	border: 1px $secondary-color-dark solid ;
+	background-color: $secondary-color;
+}
+.adminLink{
+	color: white;
+	margin: 2rem 1rem;
+	
+}
+.adminLink > p{
+	font-size: 1.2em;
+	background-color: rgba($secondary-color-dark,0.3);
+	padding: 1rem;	
+	cursor: pointer;
+	margin:1rem 0;
+	transition: 0.2s ease-in;
+}
+.adminLink > p:hover{
+	background-color: rgba($secondary-color-dark,0.8);
+}
+.adminLink > a{
+	display: block;
+	font-size: 1.2em;
+	background-color: rgba($secondary-color-dark,0.3);
+	padding: 1rem 4rem;
+	width: 100%;
+	padding-left: 0.8rem;
+	margin:2rem 0;
+	margin-left:0.3rem ;
+	transition: 0.1s ease-in;
+	color: white;
+	text-decoration: none;
+}
+.adminLink a:hover{
+	color: white;
+	background-color: rgba($secondary-color-dark,0.8);
+}
+.adminNav a{
+	color: inherit;
+
+}
+.adminNav a:hover{
+	color: inherit;
+
+}
+.alert{
+	display: flex;
+	padding: 2rem 1rem;
+	border-radius: 4px;
+	border:1px solid rgba(255, 21, 0, 0.724);
+	background-color: rgba(255, 21, 0, 0.137);
+}
+.alert >p{
+	margin:auto 0;
+	margin-left:1.6rem;
+	color: rgb(127 29 29)
+}
+.success{
+	display: flex;
+	padding: 2rem 1rem;
+	border-radius: 4px;
+	border:1px solid rgba(4, 90, 1,);
+	background-color: rgba(8, 217, 1, 0.164);
+}
+
+.success >p{
+	margin:auto 0;
+	margin-left:1.6rem;
+	color: rgba(4, 90, 1,)
+}
+.side-list > p{
+	margin:3rem 0;
+}
+.side-list a{
+    color:initial;
+    text-decoration: none;
+}
+
+.noScroll::-webkit-scrollbar {
+	display: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}

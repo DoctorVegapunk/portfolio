@@ -1,0 +1,1 @@
+import{g as t}from"./updateNews-1e1a9849.js";async function o(){return{news:await t().then(e=>e)}}const n=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{n as _,o as l};

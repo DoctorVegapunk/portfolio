@@ -1,0 +1,1 @@
+import{g as t}from"./updateRadio-25661a84.js";const o=async()=>{const e=[];return await t().then(r=>{r.forEach(n=>{!e.includes(n.genre)&&n.genre!==null&&n.genre!==void 0&&e.push(n.genre)})}),e};function g(){return{genres:o().then(e=>e)}}const s=Object.freeze(Object.defineProperty({__proto__:null,load:g},Symbol.toStringTag,{value:"Module"}));export{s as _,g as l};

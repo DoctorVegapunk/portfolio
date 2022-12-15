@@ -1,0 +1,15 @@
+.modal-backdrop{
+    background: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80") !important;
+    opacity: 0.8 !important;
+
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+
+    transition: 1s ease-in !important;
+}
+
+/* .modal-content{
+    background-color: aqua ;
+} */

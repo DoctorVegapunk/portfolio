@@ -1,0 +1,1 @@
+.playing{animation:rotate 5s infinite}@keyframes rotate{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.test{color:#7fffd4}
