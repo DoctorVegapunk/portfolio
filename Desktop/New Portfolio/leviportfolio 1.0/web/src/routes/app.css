@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-lora{
+    font-family: 'Lora', serif;
+}
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.font-oswald{
+    font-family: 'Oswald', sans-serif;
+}
+.font-raleway{
+    font-family: 'Raleway', sans-serif;
+}
+.font-questrial{
+    font-family: 'Questrial', sans-serif;
+}

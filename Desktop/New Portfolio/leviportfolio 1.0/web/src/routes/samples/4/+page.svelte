@@ -1,0 +1,84 @@
+<script>
+    const pageData =  {
+        gallery:[
+            "https://firebasestorage.googleapis.com/v0/b/levithewebsitebuilder.appspot.com/o/Samples%20Images%2FShutdown%20Gallery%2F1.webp?alt=media&token=7b99e6e2-c2a7-4399-8848-6e29aaba586f",
+            "https://firebasestorage.googleapis.com/v0/b/levithewebsitebuilder.appspot.com/o/Samples%20Images%2FShutdown%20Gallery%2F2.webp?alt=media&token=b2b85c73-baff-4e8d-a63f-4834107faf29",
+          ],
+        tags:['CDN','Hosting','Loading Optimization'],
+        name:"Shutdown Gallery",
+        role:"Hosting Speacialist",
+        desc:"I handled the hosting of the website and optimizing the assets for fast-loading times."
+    }
+</script>
+<div class="fixed [&>div>a>div>img]:w-6 z-50 right-4 [&>div]:my-7 [&>div]:opacity-80">
+    <div class="text-center text-sm text-white hover:scale-125 transition-all ease-in-out duration-200">
+        <a href="/">
+            <div class="p-3 bg-gray-500 rounded-full w-fit mx-auto">
+                <img alt="Home Icon" src="https://firebasestorage.googleapis.com/v0/b/levithewebsitebuilder.appspot.com/o/Navigation%20Icons%2Fhome.svg?alt=media&token=c63073d4-8e31-4781-841d-d4bee43b1c99"/>    
+            </div>
+        </a>
+    </div>
+    <div class="text-center text-sm text-white hover:scale-125 transition-all ease-in-out duration-200">
+        <a href="/work">
+            <div class="p-3 bg-gray-500 rounded-full w-fit mx-auto">
+                <img alt="Work Experience Icon" src="https://firebasestorage.googleapis.com/v0/b/levithewebsitebuilder.appspot.com/o/Navigation%20Icons%2Fwork_experience.svg?alt=media&token=d46edb46-0937-4736-b4fa-39e57befaf88"/>    
+            </div>
+        </a>
+    </div>
+    <div class="text-center text-sm text-white hover:scale-125 transition-all ease-in-out duration-200">
+        <a href="/samples/1">
+            <div class="p-3 bg-gray-500 rounded-full w-fit mx-auto">
+                <img alt="Samples Icon" src="https://firebasestorage.googleapis.com/v0/b/levithewebsitebuilder.appspot.com/o/Navigation%20Icons%2Fsamples.svg?alt=media&token=3198e26a-2172-432d-8fcc-ed4ed619d18a"/>    
+            </div>
+        </a>
+    </div>
+</div>
+<div class="min-h-screen py-4 bg-gray-900">
+    <div>
+        <div id="carouselIndicator" class="carousel slide">
+            <div class="carousel-indicators">
+                {#each pageData.gallery as sampleImage,i}
+                    <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to={i} aria-label={`Slide ${i}`} class:active={i === 0} aria-current={i === 0}></button>
+                {/each}
+            </div>
+            <div class="carousel-inner [&>div>img]:md:h-72 [&>div>img]:mx-auto [&>div>img]:my-10">
+                {#each pageData.gallery as sampleImage,i}
+                
+                    <div class="carousel-item" class:active={i === 0} >
+                        <img src={sampleImage} class="d-block" alt="Sample">
+                    </div>
+                {/each}
+        
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicator" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicator" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="text-white text-center py-3 m-10 border-2 border-white rounded-lg">
+            <p class="font-raleway text-3xl py-1">{pageData.name}</p>
+            <p class="font-questrial text-lg mb-3">Role:{pageData.role}</p>
+            <div class="mx-10">
+                <div class="flex flex-wrap">
+                    {#each pageData.tags as tag}
+                        <div class="p-1 px-3 border border-white rounded-full m-2">
+                            <p class="font-questrial">{tag}</p>
+                        </div>
+                    {/each}
+                </div>
+                <p class="text-left my-4 font-montserrat ml-2">{pageData.desc}</p>
+                <div class="flex justify-center [&>a]:mx-4">
+                    <a href="/samples/3">
+                        <button class="bg-white hover:!bg-black hover:!text-white hover:scale-125 transition-all duration-150 text-black font-semibold font-montserrat py-2 px-3 rounded">
+                            Previous
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
